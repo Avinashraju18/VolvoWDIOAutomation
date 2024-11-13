@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"aboutUsSliderWithIcons-1-1\"]/div[1]/button[3]/div\"}\n  (Session info: chrome=130.0.6723.119)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF7A0AF3865+3004373]\n\t(No symbol) [0x00007FF7A0789920]\n\t(No symbol) [0x00007FF7A063582A]\n\t(No symbol) [0x00007FF7A0685B8E]\n\t(No symbol) [0x00007FF7A0685E7C]\n\t(No symbol) [0x00007FF7A06CEC27]\n\t(No symbol) [0x00007FF7A06ABC1F]\n\t(No symbol) [0x00007FF7A06CBA4C]\n\t(No symbol) [0x00007FF7A06AB983]\n\t(No symbol) [0x00007FF7A0677628]\n\t(No symbol) [0x00007FF7A0678791]\n\tGetHandleVerifier [0x00007FF7A0B19FCD+3161917]\n\tGetHandleVerifier [0x00007FF7A0B6E020+3506064]\n\tGetHandleVerifier [0x00007FF7A0B63FCD+3465021]\n\tGetHandleVerifier [0x00007FF7A08E0E9B+830987]\n\t(No symbol) [0x00007FF7A079462F]\n\t(No symbol) [0x00007FF7A0790984]\n\t(No symbol) [0x00007FF7A0790B1D]\n\t(No symbol) [0x00007FF7A07800F9]\n\tBaseThreadInitThunk [0x00007FFBDBD27374+20]\n\tRtlUserThreadStart [0x00007FFBDD2BCC91+33]\n"
+}

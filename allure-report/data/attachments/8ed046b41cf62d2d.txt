@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"operational-emissions\"]/div[2]/h4\"}\n  (Session info: chrome=130.0.6723.119)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF68C433865+3004373]\n\t(No symbol) [0x00007FF68C0C9920]\n\t(No symbol) [0x00007FF68BF7582A]\n\t(No symbol) [0x00007FF68BFC5B8E]\n\t(No symbol) [0x00007FF68BFC5E7C]\n\t(No symbol) [0x00007FF68C00EC27]\n\t(No symbol) [0x00007FF68BFEBC1F]\n\t(No symbol) [0x00007FF68C00BA4C]\n\t(No symbol) [0x00007FF68BFEB983]\n\t(No symbol) [0x00007FF68BFB7628]\n\t(No symbol) [0x00007FF68BFB8791]\n\tGetHandleVerifier [0x00007FF68C459FCD+3161917]\n\tGetHandleVerifier [0x00007FF68C4AE020+3506064]\n\tGetHandleVerifier [0x00007FF68C4A3FCD+3465021]\n\tGetHandleVerifier [0x00007FF68C220E9B+830987]\n\t(No symbol) [0x00007FF68C0D462F]\n\t(No symbol) [0x00007FF68C0D0984]\n\t(No symbol) [0x00007FF68C0D0B1D]\n\t(No symbol) [0x00007FF68C0C00F9]\n\tBaseThreadInitThunk [0x00007FFBDBD27374+20]\n\tRtlUserThreadStart [0x00007FFBDD2BCC91+33]\n"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"aboutUsSliderWithIcons-1-1\"]/div[2]/button[2]"
+}

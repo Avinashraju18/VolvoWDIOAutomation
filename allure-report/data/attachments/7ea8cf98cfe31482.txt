@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#co2-per-car > div.pt-16.lg:pt-8.w-full.lg:pr-32 > p"
+}

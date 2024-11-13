@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#aboutUsSliderWithIcons-1-1 > div.until-md:hidden.max-h-full.mb-16.flex-row.justify-evenly > button:nth-child(2) > div"
+}

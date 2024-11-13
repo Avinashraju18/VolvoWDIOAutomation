@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"co2-per-car\"]/div[2]/p/text()"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "VolvoWDIOAutomation",
+  "description": "WebDriverIO-based automation framework for testing the Volvo Cars website and its various features",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js",
+    "test:individual": "cross-env NODE_ENV=devVolvo npx wdio run wdio.conf.js --spec './test/specs/test.e2e.js'",
+    "test:local": "npx wdio run config/local.browser.conf.js --spec './test/specs/test.e2e.js'",
+    "test:devVolvo": "cross-env NODE_ENV=devVolvo npx wdio run wdio.conf.js --spec './test/specs/devVolvo/*.js'",
+    "test:testVolvo": "cross-env NODE_ENV=testVolvo npx wdio run wdio.conf.js --spec './test/specs/testVolvo/*.js'"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.12",
+    "@wdio/local-runner": "^9.2.12",
+    "@wdio/mocha-framework": "^9.2.8",
+    "cross-env": "^7.0.3"
+  }
+}

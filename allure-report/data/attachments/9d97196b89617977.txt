@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#operational-emissions > div.pt-16.lg:pt-8.w-full.lg:pr-32 > h4"
+}
