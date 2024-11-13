@@ -1,5 +1,7 @@
 require('dotenv').config();
 const { baseUrl } = require('./config/env.js');  
+// const env = require('./config/env.js');
+// const environment = require('./config/env.js');  
 const localBrowserConfig = require('./config/local.browser.conf.js');
 
 module.exports.config = {
@@ -79,6 +81,9 @@ module.exports.config = {
     bail: 0,
 
     baseUrl: baseUrl[process.env.NODE_ENV] || baseUrl.devVolvo,
+    //baseUrl: environment.baseUrl[env],
+    //baseUrl: environment && typeof environment === 'string' ? environment : environment.devVolvo,
+
     //
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.

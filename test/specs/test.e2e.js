@@ -29,25 +29,45 @@ describe('Automation Test for Volvo Home Page', () => {
     });
 
     // Test case 2: Verify Safe Space heading and title text are the same
-    it('should verify that Safe Space heading and title text match', async () => {
-        const headerText = await HomePage.getSafeSpaceHeadingText();
-        const titleText = await HomePage.getSafeSpaceTitleText();
+    
+it('should verify that Safe Space heading and title text match', async () => {
+    const headerText = await HomePage.getSafeSpaceHeadingText();
+    const titleText = await HomePage.getSafeSpaceTitleText();
 
-        console.log('Safe Space Header Text:', headerText);
-        console.log('Safe Space Title Text:', titleText);
+    console.log('Safe Space Header Text:', headerText);
+    console.log('Safe Space Title Text:', titleText);
 
-        expect(headerText).toBe(titleText); // Verify both texts match
-    });
+    // Check if texts match
+    if (headerText === titleText) {
+        console.log('The Safe Space heading and title text match.');
+    } else {
+        console.log('The Safe Space heading and title text do not match.');
+    }
 
-    // Test case 3: Click the first scroll button and verify the second lifesaver text
-    it('should click the first scroll button and verify the second lifesaver text', async () => {
-        await HomePage.clickFirstScrollButton(); // Click the first scroll button
-        await waitForElementToBeDisplayed(HomePage.partialTextAfterClick);
+    // Verify both texts match using Jest expect function
+    expect(headerText).toBe(titleText); 
+});
 
-        const text1 = await HomePage.getSecondLifesaverText();
-        expect(text1).toContain('Our most acclaimed'); // Verify the expected text
-        console.log('Second Lifesaver Text:', text1);
-    });
+
+   // Test case 3: Click the first scroll button and verify the second lifesaver text
+it('should click the first scroll button and verify the second lifesaver text', async () => {
+    await HomePage.clickFirstScrollButton(); // Click the first scroll button
+    await waitForElementToBeDisplayed(HomePage.partialTextAfterClick);
+
+    const text1 = await HomePage.getSecondLifesaverText();
+    console.log('Second Lifesaver Text:', text1);
+
+    // Check if the text contains the expected phrase
+    if (text1.includes('Our most acclaimed')) {
+        console.log('The second lifesaver text matches the expected content.');
+    } else {
+        console.log('The second lifesaver text does not match the expected content.');
+    }
+
+    // Verify the text contains the expected phrase using Jest expect function
+    expect(text1).toContain('Our most acclaimed'); //  this still verifies the match for the test
+});
+
 
     // Test case 4: Verify the second button is not highlighted before interaction
     it('should verify that the second button is not highlighted before any interaction', async () => {
