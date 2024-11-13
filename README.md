@@ -115,23 +115,6 @@ npm run test:testVolvo
 
 Once the tests have completed, open the generated Allure report to view the results.
 
-Folder Structure
-
-The folder structure is designed for modularity and maintainability:
-
-/volvo-automation-framework
-├── /pageobjects               # Page Object Model files (POM)
-│   ├── Home.page.js           # Home Page object (locators and actions)
-├── /tests                     # Test specification files
-│   ├── Home.test.js           # Test file for the Home Page
-├── /utils                     # Utility functions
-│   ├── utils.js               # Reusable functions for test automation
-├── /config                    # Configuration files (e.g., environment URLs)
-│   ├── environment.js         # URLs for test/production environments
-├── /allure-results            # Allure report results
-├── package.json               # Project dependencies and scripts
-└── README.md                  # This documentation
-
 Notes
 
 Environment Configuration: Ensure that the environment configuration file (environment.js) is properly set up with the correct URLs for your test and production environments.
